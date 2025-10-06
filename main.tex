@@ -14,12 +14,43 @@
   urlcolor=blue,
   citecolor=blue
 }
+
+
+\usepackage{amsthm}
+\theoremstyle{plain}
+\newtheorem{theorem}{Теорем}[chapter]
+\newtheorem{lemma}[theorem]{Лемма}
+\newtheorem{corollary}[theorem]{Дүгнэлт}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Тодорхойлолт}
+\newtheorem{example}[theorem]{Жишээ}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Тайлбар}
+\renewcommand{\proofname}{Нотолгоо}
+\renewcommand{\qedsymbol}{$\square$}
+
+\usepackage[nameinlink]{cleveref}
+\crefname{theorem}{теорем}{теоремууд}
+\Crefname{theorem}{Теорем}{Теоремууд}
+\crefname{lemma}{лемма}{лемманууд}
+\Crefname{lemma}{Лемма}{Лемманууд}
+\crefname{corollary}{дүгнэлт}{дүгнэлтүүд}
+\Crefname{corollary}{Дүгнэлт}{Дүгнэлтүүд}
+\crefname{definition}{тодорхойлолт}{тодорхойлолтууд}
+\Crefname{definition}{Тодорхойлолт}{Тодорхойлолтууд}
+\crefname{remark}{тайлбар}{тайлбарууд}
+\Crefname{remark}{Тайлбар}{Тайлбарууд}
+
 \usepackage{titlesec}
 \titleformat{\chapter}[display]
  {\Huge\bfseries}
   {}
   {0pt}
   {}
+\usepackage{biblatex}
+\addbibresource{biblio.bib}
 
 
 \title{Computation Theory}
@@ -33,6 +64,8 @@
 \include{chapters/chapter2}
 \include{chapters/chapter3}
 \include{chapters/chapter4}
+
+\printbibliography
 
 \end{document}
 
