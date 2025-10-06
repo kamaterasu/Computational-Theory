@@ -1,0 +1,38 @@
+\documentclass[11pt]{report}
+
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\hypersetup{
+  unicode=true,
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue
+}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+ {\Huge\bfseries}
+  {}
+  {0pt}
+  {}
+
+
+\title{Computation Theory}
+\author{B221910003 Б.Төгөлдөр}
+\date{\today}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\include{chapters/chapter1}
+\include{chapters/chapter2}
+\include{chapters/chapter3}
+\include{chapters/chapter4}
+
+\end{document}
+
