@@ -17,10 +17,14 @@
 
 
 \usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
 \theoremstyle{plain}
 \newtheorem{theorem}{Теорем}[chapter]
 \newtheorem{lemma}[theorem]{Лемма}
 \newtheorem{corollary}[theorem]{Дүгнэлт}
+\newtheorem{openProblem}[theorem]{Нээлттэй асуудал}
 
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Тодорхойлолт}
@@ -32,15 +36,10 @@
 \renewcommand{\qedsymbol}{$\square$}
 
 \usepackage[nameinlink]{cleveref}
-\crefname{theorem}{теорем}{теоремууд}
 \Crefname{theorem}{Теорем}{Теоремууд}
-\crefname{lemma}{лемма}{лемманууд}
 \Crefname{lemma}{Лемма}{Лемманууд}
-\crefname{corollary}{дүгнэлт}{дүгнэлтүүд}
 \Crefname{corollary}{Дүгнэлт}{Дүгнэлтүүд}
-\crefname{definition}{тодорхойлолт}{тодорхойлолтууд}
 \Crefname{definition}{Тодорхойлолт}{Тодорхойлолтууд}
-\crefname{remark}{тайлбар}{тайлбарууд}
 \Crefname{remark}{Тайлбар}{Тайлбарууд}
 
 \usepackage{titlesec}
